@@ -10,8 +10,8 @@ const Head = () => {
   };
 
   return (
-    <div className="grid grid-flow-col p-2 m-2 shadow-lg">
-      <div className="flex col-span-1 cursor-pointer">
+    <div className="grid grid-flow-col items-center p-2 m-2 shadow-lg">
+      <div className="flex items-center cursor-pointer">
         <img
           onClick={() => toggleMenuHandler()}
           className="h-12 w-13"
@@ -24,9 +24,10 @@ const Head = () => {
           src="https://t3.ftcdn.net/jpg/03/00/38/90/360_F_300389025_b5hgHpjDprTySl8loTqJRMipySb1rO0I.jpg"
         />
       </div>
+
       <div className="col-span-10 text-center">
         <input
-          className="w-1/2 border border-gray-400 p-2 rounded-l-full"
+          className="w-1/2 border border-gray-400 p-2 rounded-l-full focus:outline-none"
           type="text"
           placeholder="Search"
         />
@@ -34,9 +35,10 @@ const Head = () => {
           🔍
         </button>
       </div>
-      <div className="col-span-1">
+
+      <div className="flex justify-end">
         <img
-          className="h-12 w-12"
+          className="h-12 w-12 rounded-full"
           src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png"
           alt="avatar"
         />
