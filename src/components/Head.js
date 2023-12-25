@@ -14,14 +14,14 @@ const Head = () => {
       <div className="flex col-span-1 cursor-pointer">
         <img
           onClick={() => toggleMenuHandler()}
-          className="h-12 w-12"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png"
+          className="h-12 w-13"
           alt="hamburger-icon"
+          src="https://miro.medium.com/v2/resize:fit:600/1*rddekGCO3PjhXqtePcIYIQ.png"
         />
         <img
           className="h-12 mx-2"
-          src="https://freebiehive.com/wp-content/uploads/2023/04/Youtube-Logo-PNG-1.jpg"
           alt="youtube-logo"
+          src="https://t3.ftcdn.net/jpg/03/00/38/90/360_F_300389025_b5hgHpjDprTySl8loTqJRMipySb1rO0I.jpg"
         />
       </div>
       <div className="col-span-10 text-center">
@@ -37,7 +37,7 @@ const Head = () => {
       <div className="col-span-1">
         <img
           className="h-12 w-12"
-          src="https://w7.pngwing.com/pngs/178/595/png-transparent-user-profile-computer-icons-login-user-avatars-thumbnail.png"
+          src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png"
           alt="avatar"
         />
       </div>
