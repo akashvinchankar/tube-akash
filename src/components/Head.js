@@ -55,7 +55,7 @@ const Head = () => {
             🔍
           </button>
         </div>
-        {showSuggestions && ( 
+        {showSuggestions && searchQuery.length > 0 && (
           <div className="fixed bg-white w-1/2 py-3 px-4 rounded-lg shadow-lg border border-gray-200">
             <ul>
               {searchSuggestions.map((suggestion) => (
