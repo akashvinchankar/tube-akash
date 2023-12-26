@@ -23,10 +23,10 @@ const VideoContainer = () => {
   return (
     <div>
       <h2 className="text-2xl font-bold text-gray-800 ml-4">Latest Videos</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div className="flex flex-wrap justify-center items-center">
         {videos.map((video) => (
-          <Link to={"/watch?v=" + video.id}>
-            <VideoCard key={video.id.videoId} video={video} />
+          <Link key={video.id} to={"/watch?v=" + video.id}>
+            <VideoCard video={video} />
           </Link>
         ))}
       </div>
