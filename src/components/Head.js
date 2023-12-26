@@ -10,11 +10,11 @@ const Head = () => {
   const [showSuggestions, setShowSuggestions] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => getSearchSuggetions(), 200);
+    const timer = setTimeout(() => getSearchSuggestions(), 200);
     return () => clearTimeout(timer);
   }, [searchQuery]);
 
-  const getSearchSuggetions = async () => {
+  const getSearchSuggestions = async () => {
     const response = await fetch(YOUTUBE_SEARCH_API + searchQuery);
     const data = await response.json();
     setSearchSuggestions(data[1]);
