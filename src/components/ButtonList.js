@@ -15,7 +15,6 @@ const buttons = [
   { id: 11, name: "360° Video" },
 ];
 
-// TODO: Make this buttons like accordion (when you click on one button, it will open and show you more buttons)
 const ButtonList = () => {
   return (
     <div className="flex flex-wrap">
